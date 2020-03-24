@@ -1,0 +1,57 @@
+.footer {
+  background-color: $color-primary;
+  padding: 1% 5%;
+
+  & > .row {
+    padding: 5% 0;
+  }
+
+  &__social-media {
+    a {
+      padding-right: 0.5rem;
+      img {
+        width: 2rem;
+      }
+    }
+  }
+
+  &__social-media,
+  &__posts {
+    padding-left: 0.4rem;
+    padding-top: 0.9rem;
+  }
+
+  .para {
+    color: $color-font;
+  }
+
+  &__recent-post {
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0;
+    }
+  }
+
+  &__posts {
+    padding-top: 1rem;
+  }
+
+  &__copyright {
+    background-color: $color-primary-2;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    &--heading {
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

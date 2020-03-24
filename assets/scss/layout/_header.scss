@@ -1,0 +1,82 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 240px;
+    transition: height 0.5s ease;
+    overflow-y: hidden;
+  }
+}
+
+.banner {
+  &__image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 75%;
+
+    img {
+      filter: brightness(0.75);
+    }
+  }
+
+  &__title {
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    padding-top: 1rem;
+    padding-left: 0%;
+
+    h1 {
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+    }
+
+    &--single {
+      padding-top: 7rem;
+    }
+  }
+
+  &__cta {
+    margin-top: 1.5rem;
+  }
+}
+
+.categories {
+  padding: 10rem 0 1rem 0;
+
+  a > span {
+    border: 1px solid $color-primary;
+    padding: 0.5rem 1rem;
+    margin-left: 1.5rem;
+    background-color: $color-primary;
+    transition: all 0.5s ease;
+  }
+
+  a:hover > span,
+  a:focus > span {
+    background-color: $color-primary-2;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .categories {
+    padding: 4rem 0 1rem 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  .categories {
+    padding: 24rem 0 1rem 0;
+  }
+}

@@ -1,0 +1,94 @@
+/*
+  Theme Name: BKPK Unram
+  Theme URI: https://cdc.unram.ac.id/blog/
+  Version: 1.0
+  Author: BKPK Unram
+  Author URI: https://cdc.unram.ac.id
+  Description: BKPK Unram Wordpress Themes
+*/
+
+.fluid {
+  width: 100%;
+  height: auto;
+}
+
+.mr--auto {
+  margin-right: auto;
+}
+
+.ml--auto {
+  margin-left: auto;
+}
+
+.pt--auto {
+  padding-top: auto;
+}
+
+.text {
+  &--dark {
+    color: $color-dark;
+  }
+
+  &--light {
+    color: $color-light;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--sm {
+    font: normal 700 1rem $font-bold;
+  }
+
+  &--md {
+    font: normal 700 1.2rem $font-bold;
+  }
+
+  &--lg {
+    font: normal bold 2rem $font-bold;
+  }
+
+  &--xl {
+    font: normal 900 3.5rem $font-bold;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+}
+
+.p-0 {
+  padding: 0;
+}
+
+p.para {
+  font: normal 200 1rem $font-regular;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: $color-gray;
+}
